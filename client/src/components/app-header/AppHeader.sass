@@ -1,0 +1,19 @@
+@import ../../style/sass-mixin
+.app-header
+    width: 100%
+    padding: 10px 20px
+    background-color: lightblue
+    .container
+        @include flex-position(space-between, center)
+.header-nav
+    @include flex-position(space-between, center)
+    gap: 20px
+    &-list
+        @include flex-position(flex-end, center)
+        gap: 20px
+        &__item
+            font-size: 20px
+            text-transform: uppercase
+            &:hover
+                color: #053
+                font-weight: 600
